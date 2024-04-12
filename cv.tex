@@ -1,0 +1,109 @@
+\documentclass{muratcan_cv}
+
+\setname{Derek}{Johnson}
+\setaddress{Charlottesville Virginia}
+\setmobile{(703)-953-4756}
+\setmail{dej3tc@virginia.edu}
+\setwebsite{https://derekjohnsonva.github.io/hirederek/}
+\setposition{Software Engineer} %ignored for now
+\setlinkedinaccount{https://www.linkedin.com/in/derek-johnson-88464116a/} %you can play with color of the template (red is also nice..)
+\setgithubaccount{https://github.com/derekjohnsonva} %you can play with color of the template (red is also nice..)
+\setthemecolor{orange} %you can play with color of the template (red is also nice..)
+\begin{document}
+\let\clearpage\relax % For some reason this makes sure we don't have a random extra page.
+%Set variables
+%You can add sections, texts, explanations just by copying the style below. Replace the dummy texts "\lipsum[1][x-x]\par" with actual texts.
+%Create header
+\headerview
+\vspace{1ex}
+%Sections
+%
+% Summary
+\addblocktext{Summary}{
+    Full stack developer interested in machine learning and digital signal processing. Recently completed a masters degree in computer science while competing in NCAA athletics for the University of Virginia.
+}
+%
+%Education
+\section{Education} 
+\datedexperience{University of Virginia}{August 2018-December 2021}
+\explanation{B.S. Computer Science -- 3.7 GPA} 
+\explanationdetail{
+    {\createskill{Relevant Courses}{
+        Algorithms \cpshalf Blockchain Technology \cpshalf Cloud Computing \cpshalf Compilers \cpshalf Computer Architecture
+        }
+    }
+}
+\datedexperience{University of Virginia}{January 2022- May 2023}
+\explanation{M.S. Computer Science -- 3.9 GPA} 
+\explanationdetail{
+    {\createskill{Relevant Courses}{
+        Autonomous Mobile Robots \cpshalf Machine Learning \cpshalf Compilers \cpshalf Software Analysis
+        }
+    }
+}
+
+% Experience
+\section{Experience}
+    \datedexperience{Amazon}{June 2022 - Aug 2022 / Salt Lake City U.T.} 
+    \explanation{Software Development Intern} 
+    \explanationdetail{\coloredbullet\
+        Worked on the Linguist Experience Team for the Amazon Translation Management System. Created a system for assigning quality scores to linguists and implemented a landing page on the translator dashboard to display this information.
+    }
+    %
+    \datedexperience{Leidos}{June 2021 - Aug 2021 / Remote} 
+    \explanation{Software Development Intern} 
+    \explanationdetail{\coloredbullet\
+        Created a data pipeline to run ML analysis on streaming data. Used Kafka and ElasticSearch extensively to move data in a distributed and fault tolerant manner. 
+    }
+    %
+    \datedexperience{Leidos}{June 2020 - Aug 2020 / Remote} 
+    \explanation{Software Development Intern} 
+    \explanationdetail{\coloredbullet\
+        Worked on a team building a large scale web app for accessing secure information. Used Java Spring Framework to build and test components for the REST API.
+    }
+    
+%
+% Skills
+\section{Skills}
+    %
+    \newcommand{\skillone}{\createskill{Programming Languages}{ Python \cpshalf Java \cpshalf C++ \ \  Javascript \cpshalf Rust\cpshalf Bash}}
+    %
+    \newcommand{\skilltwo}{\createskill{Software Development}{Programming Paradigms \cpshalf GIT \cpshalf CLI \cpshalf Agile Methodology}}
+    %
+    \newcommand{\skillthree}{\createskill{Machine Learning}{Jupyter \cpshalf Matplotplib \cpshalf Numpy \cpshalf Pandas \cpshalf Scikit-learn}}
+    %
+    \newcommand{\skillfour}{\createskill{Frameworks}{React \cpshalf Django \cpshalf Spring Boot \cpshalf Svelte}}
+    %
+    \newcommand{\skillfive}{\createskill{System Design}{Kafka \cpshalf ElasticSearch \cpshalf Firebase}}
+    %
+    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
+%
+% Experience
+\section{Misc}
+    \newcommand{\extraone}{%
+    4-year varsity athlete for the University of Virginia Track and Field Team.
+    }
+    %
+    \newcommand{\extratwo}{%
+    All American 3000m steeplechase 2021 \& 2023.
+    }
+    %
+    \newcommand{\extrathree}{%
+    Olympic track and field trials qualifier 2021.
+    }
+    %
+    \newcommand{\extrafour}{
+    Other track accolades
+    \href{https://t.co/U35VcjYEVq?amp=1}{VaSID athlete of the year 2021 \ExternalLink}
+    \cpshalf 
+    \href{https://t.co/Ix0BObhEl6?amp=1}{CoSIDA Academic All-District 2021 \ExternalLink} \cpshalf
+    \href{https://virginiasports.com/news/2021/07/22/uva-places-29-on-ustfccca-all-academic-team/}{USATFCCCA All-Academic Team 2021\ExternalLink}
+    \cpshalf
+    }
+    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree, \extrafour,}
+    %
+    \createbullets{\listofextras}
+%
+%Footnote
+\createfootnote
+\end{document}
